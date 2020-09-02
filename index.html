@@ -1,104 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>Desenvolvimento WEB</title>
+<title>Assignment 2</title>
 <meta charset="utf-8">
-<style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        color: black;
-        background-color: skyblue;
-        font-size: 20px; 
-        text-align:justify; 
-        font-family:-apple-system, BlinkMacSystemFont, 
-            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
-            'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    #img1{
-        border: 2px solid blue;
-        width: 50%;
-        height: 350px;
-        margin-left: 3%;
-    }
-    h1{
-        font-size: 30px;
-        color: black;
-        text-align: center;
-        margin: 1%;
-        -webkit-text-stroke-width: 0.5px; /* largura da borda */
-        -webkit-text-stroke-color: white; /* cor da borda */
-    }
-    #sumario{
-        position: relative;
-        font-size: 30px;
-        width: 40%;
-        float: right;
-    }
-    #title{
-        width: 500px;
-        align-content: center;
-        clear: both;
-    }
-    a{
-        color: black;
-    }
-    .texto{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    li{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-</style>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="assignment-2-style.css">
+<script>alert("Bem vindo ao meu primeiro site responsivo, ou seja, ele é capaz de adaptar o seu layout conforme o tamanho da tela do dispositivo, incrivel né? \nGabriel Cardoso, 2020");</script>
 </head>
 <body>
-    <h1>Curso de Programação Web (By Gabriel Cardoso)</h1>
-    <img id="img1" src="https://blog.mastertech.com.br/wp-content/uploads/2017/04/desenvolvimento-web-1100x493.png">
-    <ul id="sumario">
-        <li id="title">HTML (HyperText Markup Language)
-            <ol>    
-            <li><a href="#entidades">Entidades do HTML</a></li>
-            <li><a href="#listas">Listas em HTML</a></li>
-            <li><a href="#estrutura">Estrutura do HTML</a></li>
-            <li><a href="#links">Links no HTML</a></li>
-            <li><a href="#imagens">Imagens no HTML</a></li>
-            </ol>
-        </li><br>
-        <li id="title">CSS (Cascading Style Sheets)
-        </li><br>
-        <li id="title">JavaScript
-        </li>
-    </ul>
-
-    <div class="texto">
-        <h1>1. Entidades HTML</h1>
-        <p> Alguns caracteres, devido a sintaxe do HTML, podem não funcionar corretamente 
-        quando exibidos em um navegador. Para resolver esse problema, são empregadas
-        as chamadas Entidades HTML, que nada mais são do que codinomes empregados para
-        referenciar os simbolos que são usados pela própria linguagem. Como exemplo
-        posso citar alguns caracteres como:</p><br>
-        <ul>
-            <li>Os colhetes angulares &lt; e &gt;, são utilizados na abertura das tags do HTML,
-                e podem ser substituidos utilizando &amp;lt; e &amp;gt;. <br><br>
-            </li>
-            <li> O E comercial (&amp;), pode ser substiuido utilizando &amp;amp;. <br><br>
-            </li>
-            <li>As aspas simples (&apos;) e duplas (&quot;), podem ser substituidas, respectivamente por
-                &amp;apos; e &amp;quot;. <br><br>
-            </li>
-            <li>O simbolo de copyright (&copy;), por ser um símbolo que normalmente não está presente nos 
-                teclados comuns, pode ser empregado com uma entidade, basta utilizar &amp;copy;. <br><br>
-            </li>
-            <li>Assim como o símbolo de copyright, o simpolo de marca registrada (&reg;) também não é
-                encontrado na maioria dos teclados comuns, mas pode ser utilizado com &amp;reg;.
-            </li>
-        </ul>
+<h1>Desenvolvimento Web</h1>
+<div class="menu">
+    <div class='coluna'>
+        <div class="option" id="html">
+            <span>HTML</span>
+            <p>
+                O HyperText Markup Language (Linguagem de Marcação de Hipertexto), ou simplesmente HTML, 
+                é uma linguagem de marcação que pode ser interpretada pelos navegadores, sendo assim, 
+                utilizada para a criação de páginas na web. No Desenvolvimento web o HTML é utilizado 
+                para definir a estrutura da página. Atualmente o HTML se encontra em sua quinta versão
+                (HTML 5) que apresentou diversos recursos para facilitar a implementação de diversos 
+                tipos de conteúdos nas páginas web. Um dos principais diferenciais do HTML é sua capacidade
+                de ser facilmente legível por seres humanos, ainda que nunca tenham tido contato.
+            </p>
+        </div>
+    </div>
+    
+    <div class='coluna'>
+        <div class="option" id="css">
+            <span>CSS</span>
+            <p>
+                Cascading Style Sheets (Folha de Estilo em Cascatas), ou simplesmente CSS, é uma linguagem
+                utilizada como mecanismo para adicionar estilos às páginas web, ou seja, é utilizada em conjunto
+                com o HTML para melhorar a experiência visual do usuário com o conteúdo que está sendo exibido.
+                No entanto, não subestime o CSS, apesar de com essa definição a linguagem aparentar ser um tanto 
+                quanto simples e limitada, a diferença que faz um folha de estilo bem escrita normalmente é crucial
+                para fazer com que o conteúdo da página seja realmente apresentado de uma forma que cumpra o objetivo
+                pelo qual foi colocado.
+            </p>
+        </div>
     </div>
 
+    <div id="terceira" class='coluna'>
+        <div class="option" id="js">
+            <span>JavaScript</span>
+            <p>
+                O JavaScript, ou também abreviadamente JS, é uma linguagem de programação estruturada 
+                interpretada. Enquanto o HTML e o CSS são responsáveis pelo conteúdo apresentado, 
+                ela envolve a lógica de programação, sendo utilizado inclusive para manipular elementos e a 
+                própria estilização das páginas web, conforme o objetivo dos desenvolvedores. Dentre as 
+                utilizadas no Desenvolvimento web, por ser mais próxima da linguagem de máquina (ainda que 
+                esteja longe disso), é a menos legível pelos humanos, tendo uma estrutura muitas vezes 
+                assustadora para que, nunca teve contato com uma linguagem de programação anteriormente.
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
